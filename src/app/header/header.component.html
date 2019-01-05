@@ -7,20 +7,21 @@
     <ul
     class="navbar-nav"
     appDropdown>
-      <li class="nav-item active">
-        <a class="nav-link" href="#" (click)="onMenuSelected('recipe')">Recipes <span class="sr-only">(current)</span></a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/recipes" >Recipes <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/shopping-lists"  >Shopping List</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" (click)="onMenuSelected('shoppinglist')">Shopping List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle"
+           stlye="cursor: pointer;"
+           id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Manage
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Save Data</a>
-          <a class="dropdown-item" href="#">Fetching Data</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" stlye="cursor: pointer;">Save Data</a>
+          <a class="dropdown-item" stlye="cursor: pointer;">Fetching Data</a>
         </div>
       </li>
     </ul>
